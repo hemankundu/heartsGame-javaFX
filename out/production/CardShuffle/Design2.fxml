@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import java.util.ArrayList?>
+<AnchorPane fx:id="rootGrid" styleClass="anchor-pane" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control2">
+   <children>
+      <Label fx:id="lblPl2" rotate="-90.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <padding>
+            <Insets top="50.0" />
+         </padding></Label>
+      <Label fx:id="lblPl1" alignment="CENTER" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPl3" alignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="lblPl4" rotate="90.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <padding>
+            <Insets top="50.0" />
+         </padding></Label>
+    <Button fx:id="btnBackStart" mnemonicParsing="false" onAction="#btnBackStartClicked" text="&lt;-back-" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <StackPane alignment="TOP_CENTER" layoutX="150.0" layoutY="572.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0">
+               <children>
+                    <HBox fx:id="hboxPl1" alignment="BOTTOM_CENTER" fillHeight="false" focusTraversable="true" spacing="10.0">
+                        <children>
+                            <ImageView fx:id="pl1img1" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl1img2" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl1img3" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl1img4" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl1img5" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl1img6" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl1img7" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl1img8" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl1img9" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl1img10" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl1img11" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl1img12" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl1img13" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                        </children>
+                        <fx:define>
+                            <ArrayList fx:id="pl1img">
+                                <fx:reference source="pl1img1" />
+                                <fx:reference source="pl1img2" />
+                                <fx:reference source="pl1img3" />
+                                <fx:reference source="pl1img4" />
+                                <fx:reference source="pl1img5" />
+                                <fx:reference source="pl1img6" />
+                                <fx:reference source="pl1img7" />
+                                <fx:reference source="pl1img8" />
+                                <fx:reference source="pl1img9" />
+                                <fx:reference source="pl1img10" />
+                                <fx:reference source="pl1img11" />
+                                <fx:reference source="pl1img12" />
+                                <fx:reference source="pl1img13" />
+                            </ArrayList>
+                        </fx:define>
+                    </HBox>
+               </children>
+            </StackPane>
+            <StackPane layoutX="610.0" layoutY="150.0" AnchorPane.bottomAnchor="150.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="150.0">
+               <children>
+                    <VBox fx:id="vboxPl2" fillWidth="false" spacing="10.0" StackPane.alignment="CENTER">
+                        <children>
+                            <ImageView fx:id="pl2img1" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl2img2" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl2img3" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl2img4" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl2img5" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl2img6" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl2img7" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl2img8" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl2img9" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl2img10" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl2img11" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl2img12" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl2img13" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                        </children>
+                        <fx:define>
+                            <ArrayList fx:id="pl2img">
+                                <fx:reference source="pl2img1" />
+                                <fx:reference source="pl2img2" />
+                                <fx:reference source="pl2img3" />
+                                <fx:reference source="pl2img4" />
+                                <fx:reference source="pl2img5" />
+                                <fx:reference source="pl2img6" />
+                                <fx:reference source="pl2img7" />
+                                <fx:reference source="pl2img8" />
+                                <fx:reference source="pl2img9" />
+                                <fx:reference source="pl2img10" />
+                                <fx:reference source="pl2img11" />
+                                <fx:reference source="pl2img12" />
+                                <fx:reference source="pl2img13" />
+                            </ArrayList>
+                        </fx:define>
+      
+      
+                    </VBox>
+               </children>
+            </StackPane>
+            <StackPane layoutX="150.0" layoutY="50.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="50.0">
+               <children>
+                    <HBox fx:id="hboxPl3" alignment="TOP_CENTER" fillHeight="false" focusTraversable="true" spacing="10.0" StackPane.alignment="CENTER">
+                        <children>
+                            <ImageView fx:id="pl3img1" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl3img2" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl3img3" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl3img4" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl3img5" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl3img6" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl3img7" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl3img8" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl3img9" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl3img10" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl3img11" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl3img12" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl3img13" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </HBox.margin>
+                        </ImageView>
+                        </children>
+                        <fx:define>
+                            <ArrayList fx:id="pl3img">
+                                <fx:reference source="pl3img1" />
+                                <fx:reference source="pl3img2" />
+                                <fx:reference source="pl3img3" />
+                                <fx:reference source="pl3img4" />
+                                <fx:reference source="pl3img5" />
+                                <fx:reference source="pl3img6" />
+                                <fx:reference source="pl3img7" />
+                                <fx:reference source="pl3img8" />
+                                <fx:reference source="pl3img9" />
+                                <fx:reference source="pl3img10" />
+                                <fx:reference source="pl3img11" />
+                                <fx:reference source="pl3img12" />
+                                <fx:reference source="pl3img13" />
+                            </ArrayList>
+                        </fx:define>
+      
+      
+                    </HBox>
+               </children>
+            </StackPane>
+            <StackPane layoutX="50.0" layoutY="150.0" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="150.0">
+               <children>
+                    <VBox fx:id="vboxPl4" alignment="CENTER_RIGHT" fillWidth="false" focusTraversable="true" spacing="10.0" StackPane.alignment="CENTER">
+                        <children>
+                            <ImageView fx:id="pl4img1" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl4img2" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl4img3" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl4img4" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl4img5" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl4img6" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl4img7" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl4img8" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl4img9" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl4img10" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl4img11" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl4img12" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                            <ImageView fx:id="pl4img13" onMouseClicked="#plimgClicked" pickOnBounds="true" preserveRatio="true">
+                                <VBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                </VBox.margin>
+                        </ImageView>
+                        </children>
+                        <fx:define>
+                            <ArrayList fx:id="pl4img">
+                                <fx:reference source="pl4img1" />
+                                <fx:reference source="pl4img2" />
+                                <fx:reference source="pl4img3" />
+                                <fx:reference source="pl4img4" />
+                                <fx:reference source="pl4img5" />
+                                <fx:reference source="pl4img6" />
+                                <fx:reference source="pl4img7" />
+                                <fx:reference source="pl4img8" />
+                                <fx:reference source="pl4img9" />
+                                <fx:reference source="pl4img10" />
+                                <fx:reference source="pl4img11" />
+                                <fx:reference source="pl4img12" />
+                                <fx:reference source="pl4img13" />
+                            </ArrayList>
+                        </fx:define>
+      
+      
+                    </VBox>
+               </children>
+            </StackPane>
+            <StackPane layoutX="300.0" layoutY="300.0" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="200.0">
+               <children>
+                    <AnchorPane fx:id="dkAncPane" StackPane.alignment="CENTER">
+                        <children>
+                        <StackPane layoutX="100.0" layoutY="100.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="100.0">
+                           <children>
+                              <VBox alignment="CENTER" StackPane.alignment="CENTER">
+                                 <children>
+                                    <Label id="label-notification" fx:id="lblNotification" alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="486.0" styleClass="label-notification" text="Notifications here" textAlignment="CENTER" textFill="#ff4343">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                       <children>
+                                          <ImageView fx:id="swapimg1" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" />
+                                          <ImageView fx:id="swapimg2" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" />
+                                          <ImageView fx:id="swapimg3" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                        <fx:define>
+                                            <ArrayList fx:id="swapimg">
+                                                <fx:reference source="swapimg1" />
+                                                <fx:reference source="swapimg2" />
+                                                <fx:reference source="swapimg3" />
+                                            </ArrayList>
+                                        </fx:define>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                                  <Button fx:id="btnShuffle" alignment="CENTER" onAction="#btnShuffleClicked" text="Shuffle" textAlignment="CENTER" visible="false" StackPane.alignment="CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="50.0" layoutY="422.0" mouseTransparent="true" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+                           <children>
+                              <ImageView fx:id="dkimg1" fitHeight="90.0" preserveRatio="true" StackPane.alignment="CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="422.0" layoutY="50.0" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+                           <children>
+                                  <ImageView fx:id="dkimg2" fitWidth="90.0" preserveRatio="true" StackPane.alignment="CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane layoutX="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fx:id="dkimg3" fitHeight="90.0" preserveRatio="true" StackPane.alignment="CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane layoutY="50.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="50.0">
+                           <children>
+                                  <ImageView fx:id="dkimg4" fitWidth="90.0" preserveRatio="true" StackPane.alignment="CENTER" />
+                           </children>
+                        </StackPane>
+      
+                        </children>
+                    </AnchorPane>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+      <DialogPane fx:id="dialogPane" expanded="true" headerText="Score Board" visible="false" AnchorPane.bottomAnchor="400.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="400.0">
+         <header>
+            <StackPane>
+               <children>
+                  <Label fx:id="dialogHeader">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </StackPane>
+         </header>
+         <content>
+            <StackPane>
+               <children>
+                  <VBox spacing="10.0" StackPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <VBox fx:id="pl1Score" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="pl1Head">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font></Label>
+                                    <Label fx:id="pl1FinalScore">
+                                       <font>
+                                          <Font name="System Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="pl2Score" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="pl2Head">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font></Label>
+                                    <Label fx:id="pl2FinalScore">
+                                       <font>
+                                          <Font name="System Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="pl3Score" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="pl3Head">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font></Label>
+                                    <Label fx:id="pl3FinalScore">
+                                       <font>
+                                          <Font name="System Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="pl4Score" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="pl4Head">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font></Label>
+                                    <Label fx:id="pl4FinalScore">
+                                       <font>
+                                          <Font name="System Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+         </content>
+         <expandableContent>
+            <StackPane>
+               <children>
+                  <Button fx:id="dialogBtn" mnemonicParsing="false" onAction="#dialogBtnClicked" />
+               </children>
+            </StackPane>
+         </expandableContent>
+      </DialogPane>
+      <Label fx:id="lblHeman" layoutX="10.0" layoutY="10.0" onMouseClicked="#lblHemanClicked" text="Heman Kundu" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+   </children>
+    <fx:define>
+    <ArrayList fx:id="lblPl">
+        <fx:reference source="lblPl1" />
+        <fx:reference source="lblPl2" />
+        <fx:reference source="lblPl3" />
+        <fx:reference source="lblPl4" />
+    </ArrayList>
+    </fx:define>
+    <fx:define>
+        <ArrayList fx:id="plScore">
+            <fx:reference source="pl1Score" />
+            <fx:reference source="pl2Score" />
+            <fx:reference source="pl3Score" />
+            <fx:reference source="pl4Score" />
+        </ArrayList>
+    </fx:define>
+    <fx:define>
+        <ArrayList fx:id="plHead">
+            <fx:reference source="pl1Head" />
+            <fx:reference source="pl2Head" />
+            <fx:reference source="pl3Head" />
+            <fx:reference source="pl4Head" />
+        </ArrayList>
+    </fx:define>
+    <fx:define>
+        <ArrayList fx:id="plFinalScore">
+            <fx:reference source="pl1FinalScore" />
+            <fx:reference source="pl2FinalScore" />
+            <fx:reference source="pl3FinalScore" />
+            <fx:reference source="pl4FinalScore" />
+        </ArrayList>
+    </fx:define>
+</AnchorPane>

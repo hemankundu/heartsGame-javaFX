@@ -1,0 +1,146 @@
+.root {
+	/* Swatch Colors - Blue*/
+	-swatch-100: #BBDEFB;
+	-swatch-200: #90CAF9;
+	-swatch-300: #64BEF6;
+	-swatch-400: #42A5F5;
+	-swatch-500: #2196F3;
+	/*default text */
+	-fx-text-base-color: -swatch-500;
+	-fx-text-button-normal: -swatch-500;
+	-fx-text-button-colored: rgb(255.0, 255.0, 255.0);
+	-fx-text-button-text: rgb(100.0, 100.0, 100.0);
+	-fx-text-title-color: rgb(45.0, 45.0, 45.0);
+	-fx-text-subtitle-color: rgb(65.0, 65.0, 65.0);
+	-fx-text-control-title-color: rgb(130.0, 130.0, 130.0);
+	-fx-text-fill: -fx-text-base-color;
+	-dark: rgb(47.0, 52.0, 57.0);
+	-fx-background-color: -dark;
+	/*default font */
+	-fx-font-family: 'Roboto Medium';
+	-fx-font-size: 14.0px;
+	-fx-disabled-opacity: 0.6;
+	/*default colors */
+	-swatch-grey: rgb(200.0, 200.0, 200.0);
+	-swatch-dark-grey: rgb(150.0, 150.0, 150.0);
+	-swatch-light-grey: rgb(230.0, 230.0, 230.0);
+	-swatch-toolbar: rgb(245.0, 245.0, 245.0);
+	-swatch-toolbar-selected: rgb(215.0, 215.0, 215.0);
+	/*
+     Modena colors
+     */
+	-fx-dark-text-color: white; /* Text color when selected*/
+	-fx-mid-text-color: -fx-text-base-color;
+	-fx-light-text-color: -swatch-light-grey;
+	-fx-body-color: white;
+	/* A bright blue for the focus indicator of objects. Typically used as the
+     * first color in -fx-background-color for the "focused" pseudo-class. Also
+     * typically used with insets of -1.4 to provide a glowing effect.
+     */
+	-fx-focus-color: -swatch-400;
+	-fx-faint-focus-color: -swatch-200;
+	/* A bright blue for highlighting/accenting objects.  For example: selected
+     * text; selected items in menus, lists, trees, and tables; progress bars */
+	-fx-accent: -swatch-400;
+	-fx-dark-text-color: white;
+}
+/* Label ***************************/
+.label {
+	-fx-text-fill: -fx-text-base-color;
+}
+
+.label:disabled {
+	-fx-opacity: -fx-disabled-opacity;
+}
+
+.label:show-mnemonics>.mnemonic-underline {
+	-fx-stroke: -fx-text-base-color;
+}
+/* Button **********************************/
+.button {
+    -fx-background-color: white;
+	-fx-text-fill: -fx-text-button-normal;
+	-fx-font-family: 'Roboto';
+	-fx-font-weight: bold;
+	-fx-background-insets: 0.0;
+	-fx-background-radius: 4.0;
+	-fx-padding: 0.7em;
+	-fx-alignment: CENTER;
+}
+
+.button:default {
+	-fx-background-color: -swatch-500;
+	-fx-text-fill: -fx-text-button-colored;
+}
+
+.button:cancel {
+	-fx-background-color: #F39621;
+	-fx-text-fill: -fx-text-button-colored;
+}
+
+.button:focused, .button:default:focused {
+	-fx-background-color: -swatch-light-grey;
+}
+.button:cancel:focused {
+    -fx-background-color:#F9CA90
+}
+
+
+.button:hover, .button:default:hover {
+	-fx-background-color: -swatch-200;
+	-fx-effect: dropshadow(gaussian, #2196F3AA, 10.0, 0.5, 0,1);
+}
+
+.button:cancel:hover {
+	-fx-background-color: #F9CA90;
+	-fx-effect: dropshadow(gaussian, #F39621AA, 10.0, 0.5, 0,1);
+}
+
+.toggle-button:focused:selected {
+	-fx-background-color: derive(-swatch-500, 50.0%),
+		derive(-swatch-500, -20.0%);
+	-fx-background-insets: 0.0, 0.2em;
+	-fx-text-fill: -fx-text-button-colored;
+}
+
+/* Text field **********************************/
+.text {
+	-fx-font-smoothing-type: gray;
+}
+
+.text-field {
+	-fx-background-color: transparent;
+	-fx-background-radius: 2.0;
+	-fx-padding: 0.5em 0.5em 0.5em 0.1em;
+	-fx-border-color: -swatch-grey;
+	-fx-border-width: 0 0 2 0;
+	-fx-prompt-text-fill: derive(-dark, 50.0%);
+	-fx-highlight-fill: rgb(94.0, 203.0, 234.0);
+}
+
+.text-field>*>.text {
+	-fx-effect: null;
+	-fx-fill: -dark;
+}
+
+.text-field:focused {
+	-fx-border-color: -swatch-500;
+}
+/* imageviews */
+
+.image-view:hover{
+	-fx-effect: dropshadow(gaussian, #2196F3AA, 10.0, 0.5, 0,1);
+}
+
+.image-view-disabled {
+    -fx-opacity: -fx-disabled-opacity;
+}
+
+.image-view {
+    -fx-opacity: 1;
+}
+/*anchor pane*/
+
+/*.anchor-pane {
+    -fx-background-image: url("/home/heman/IdeaProjects/CardShuffle/src/backgronds/heart.jpg");
+}*/

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import java.util.ArrayList?>
+<AnchorPane id="start-anchor" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control">
+   <children>
+      <StackPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" StackPane.alignment="CENTER">
+               <children>
+                  <Label text="Hearts Game" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="64.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="50.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <TextField fx:id="pl1Name" promptText="First Player" />
+                        <TextField fx:id="pl2Name" promptText="Second Player" />
+                        <TextField fx:id="pl3Name" promptText="Third Player" />
+                        <TextField fx:id="pl4Name" promptText="Fourth Player" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Button fx:id="btnStart" defaultButton="true" mnemonicParsing="false" onAction="#btnStartClicked" prefHeight="45.0" prefWidth="100.0" text="Start">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnExit" cancelButton="true" mnemonicParsing="false" onMouseClicked="#btnExitClicked" prefHeight="45.0" prefWidth="100.0" text="Exit">
+                      <VBox.margin>
+                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                      </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+      <Label text="Heman Kundu" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+   </children>
+   <fx:define>
+      <ArrayList fx:id="plName">
+         <fx:reference source="pl1Name" />
+         <fx:reference source="pl2Name" />
+         <fx:reference source="pl3Name" />
+         <fx:reference source="pl4Name" />
+      </ArrayList>
+   </fx:define>
+</AnchorPane>
